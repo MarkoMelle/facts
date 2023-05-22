@@ -1,0 +1,37 @@
+{
+   "env": {
+     "browser": true,
+     "es2021": true
+   },
+   "extends": [
+     "airbnb",
+     "plugin:react/recommended",
+     "plugin:react-hooks/recommended"
+   ],
+   "parserOptions": {
+     "ecmaFeatures": {
+       "jsx": true
+     },
+     "ecmaVersion": 12,
+     "sourceType": "module"
+   },
+   "plugins": ["react", "react-hooks"],
+   "settings": {
+     "react": {
+       "version": "detect"
+     }
+   },
+   "overrides": [
+     {
+       "files": ["*Slice.js"],
+       "rules": {
+         "no-param-reassign": "off"
+       }
+     }
+   ],
+   "rules": {
+     "quotes": ["error", "double"],
+     "comma-dangle": ["error", "never"]
+   }
+ }
+ 
