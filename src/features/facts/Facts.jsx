@@ -10,7 +10,6 @@ export default function Facts() {
 
   const handleInput = (e) => {
     const value = parseInt(e.target.value, 10);
-    console.log(value);
     if (value >= 0 && value < 6) {
       setInputValue(value);
       dispatch(returnFact(value));
